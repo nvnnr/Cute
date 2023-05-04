@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montez', cursive;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#fff;
+    --main-color:#e55472;
+    --text-color:#010101;
+    --2nd-color:#434343;
+    --other-color:#666666;
+    --big-font:5rem;
+    --h2-font:2.3rem;
+    --p-font:1.3rem;
+}
+body{
+ color: var(--text-color);
+ background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(red32, green36, blue36 /10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    transition: all .50s ease;
+}
+.style{
+    font-family: "sanserif";
+    color: rgb(255, 0, 144);
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color:#ff002f;
+    font: size 15px;;
+    font-weight:500;
+    margin: 10px 20px;
+    transition: all .50s ease;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+}
+.h-icons i{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+}
+.h-icons i:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+height: 30px;
+width: 30px;
+background: var(--bg-color);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+border-radius: 50%;
+z-index: 10001;
+cursor: pointer;
+display: none;
+}
+section{
+    padding: 60px 14% 70px;
+}
+.home{
+    position: relative;
+    width:100% ;
+    height:100vh;
+    background:url("./29.jpg") ;
+    background-repeat: no-repeat;
+    background-position:65%;
+    background-color:#102229 ;
+    border-radius: 50px;
+  background-size: 400px 450px;
+ border-radius:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#jarugu{
+translate: right;
+
+}
+.home-text h1{
+font-family: "sanserif";
+font-size: var(--big-font);
+color:#ff0073;
+line-height: 1.3rem;
+margin-bottom: 25px;
+}
+.home-text p{
+    color: rgb(255, 255, 255);
+    font-size: var(--p-font);
+    line-height: 33px;
+    margin-bottom: 60px;
+}
+#paragraph{
+    color: rgb(255, 255, 255);
+}
+.btn{
+    padding: 18px 30px;
+    background: #00d5ffb6;
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: var(--text-color);
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap: 2.5rem;
+    align-items: center;
+}
+.banner-img{
+    overflow: hidden;
+}
+.banner-img img{
+    width: 100%;
+    display: block;
+    transition:transform 0.5s;
+    cursor: pointer;
+}
+.banner-img:hover img{
+    transform: scale(1.1);
+}
+.center-text h2{
+    text-align: center;
+    font-size: var(--h2-font);
+    font-style: 800;
+    color: var(--text-color);
+}
+.new-content{
+display: grid;
+align-items: center;
+grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+gap: 2.5rem;
+margin-top: 4.5rem;
+text-align: center;
+}
+.row{
+    position: relative;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.row h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .50s ease;
+}
+.row h4:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.row h5{
+    position: absolute;
+    top:20px ;
+    left: 0;
+    height: 30px;
+    width: 60px;
+    color: var(--bg-color);
+    background: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.row .bbtn a{
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background: rgba(0, 0, 0,0.8);
+    color: var(--bg-color);
+    transition: opacity .5s;
+    opacity: 0;
+}
+.row:hover .bbtn a{
+    opacity: 1;
+}
+.blog-content{
+    display: grid;
+align-items: center;
+grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+gap: 2.5rem;
+margin-top: 4.5rem;
+}
+.box-image{
+    overflow: hidden;
+}
+.box-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition:transform 0.5s;
+    cursor: pointer;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    background: #272829;
+}
+.contact-box h4{
+margin-bottom: 1.5rem;
+font-size: 18px;
+color: var(--bg-color);
+}
+.contact-box li{
+    margin-bottom: 18px;
+}
+.contact-box li a{
+    display: block;
+    color: #00c3ff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.contact-box li a:hover{
+    transform: translateX(-7px);
+    color: var(--main-color);
+}
+.contact-box h5{
+font-size: 16px;
+font-weight: 600;
+color: #e9070799;
+}
+.social{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.social i{
+    height: 37px;
+    width: 37px;
+    background: aqua;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 1.1rem;
+    color: yellow;
+    transition: all .50s ease;
+    gap: 1.5rem;
+}
+.social i:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+.End-Test p{
+    text-align: center;
+    background: #00d0ff;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+
+@media  (max-width:1200px){
+    header{
+        padding: 12px 3%;
+    }
+    section{
+        padding: 40px 3% 50px;
+    }
+}
+@media  (max-width:1200px){
+    #menu-icon{
+        display: block;
+    }
